@@ -79,8 +79,8 @@
     <Service Include="{82A7F48D-3B50-4B1E-B82E-3ADA8210C358}" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\OhceApp\OhceApp.csproj">
-      <Project>{fe9278d3-8b08-41a8-9b53-7662a9203b67}</Project>
+    <ProjectReference Include="OhceApp\OhceApp.csproj">
+      <Project>{e3d90079-11a5-444b-9d52-956c655a8c57}</Project>
       <Name>OhceApp</Name>
     </ProjectReference>
   </ItemGroup>
