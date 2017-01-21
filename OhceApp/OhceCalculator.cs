@@ -93,7 +93,6 @@ namespace OhceApp
         }
         public string RunCommand = "ohce";
         public string RunCommandErrorMessage = "Youy should write 'ohce <YourName> for run the program.'";
-        public string PleaseEnterName { get; } = "Please Enter a Name";
         public string Bye { get; } = "Adios ";
         public string MorningGreeting { get; } = "!Buenos días ";
         public string NightGreeting { get; } = "!Buenos noches ";

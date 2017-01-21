@@ -13,13 +13,23 @@ namespace OhceApp
             Console.WriteLine("Bienvenido a Ohce!!");
             Console.WriteLine("*******************");
             var calculator = new OhceCalculator();
-            while (true)
+            var continueProgram = true;
+            while (continueProgram)
             {
                 var input = Console.ReadLine();
-                var result = calculator.CalculateResult(input, DateTime.Now);
-                Console.WriteLine(result);
-
+                var results = calculator.CalculateResult(input, DateTime.Now);
+                foreach (var result in results)
+                {
+                    Console.WriteLine(result);
+                    if (result.Contains(calculator.Bye))
+                    {
+                        continueProgram = false;
+                    }
+                }                
             }
+            Console.WriteLine("*******************");
+            Console.WriteLine("Press any key to close the app");
+            Console.ReadLine();
 
         }
     }
