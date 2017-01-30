@@ -54,7 +54,7 @@ namespace OhceKata
         public void IfRunCommand_WithEmptyName_ReturnsRunCommandErrorMessage()
         {
             calculator = new OhceCalculator();
-            var input = calculator.RunCommand + "";
+            var input = calculator.RunCommand + " " + String.Empty;
             var result = calculator.CalculateResult(input, new DateTime());
 
             result.Single().Should().Be(calculator.RunCommandErrorMessage);

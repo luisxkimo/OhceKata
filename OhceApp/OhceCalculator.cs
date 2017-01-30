@@ -33,10 +33,14 @@ namespace OhceApp
                         result.Add(RunCommandErrorMessage);
                         return result;
                     }
-
                     else
                     {
                         name = realInput[1];
+                        if (string.IsNullOrWhiteSpace(name))
+                        {
+                            result.Add(RunCommandErrorMessage);
+                            return result;
+                        }
                         result.Add(CalculateGreetMessage(dateTime));
                         return result;
                     }
